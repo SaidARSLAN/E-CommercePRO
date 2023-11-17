@@ -26,6 +26,9 @@ nav {
   align-items: center;
   background-color: #776B5D;
 }
+nav .navbar-logo {
+  flex-grow: 1;
+}
 nav .navbar-logo h2 {
   font-family: "Barlow", sans-serif;
   font-size: 3rem;
@@ -33,4 +36,71 @@ nav .navbar-logo h2 {
   font-style: italic;
   color: #F3EEEA;
   cursor: pointer;
+}
+nav .navbar-links {
+  flex-grow: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+nav .navbar-links a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #B0A695;
+  text-transform: capitalize;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+nav .navbar-links a:hover {
+  color: #F3EEEA;
+}
+nav .navbar-auth {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+nav .navbar-auth button {
+  border: none;
+  background-color: #B0A695;
+  color: #F3EEEA;
+  padding: 1rem;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+nav .navbar-auth button:hover {
+  background-color: #F3EEEA;
+  color: #B0A695;
+}
+
+.main-hero {
+  width: 100%;
+  height: calc(100% - 100px);
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.main-hero .hero-image {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/wallpaperOne.jpg");
+  filter: brightness(0.3);
+  background-position: center;
+}
+.main-hero h1 {
+  position: absolute;
+  color: #EBE3D5;
+  font-family: "Barlow", sans-serif;
+  font-size: 3.2rem;
+  letter-spacing: 1px;
 }/*# sourceMappingURL=App.css.map */

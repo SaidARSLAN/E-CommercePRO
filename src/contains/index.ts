@@ -1,4 +1,4 @@
-
+import wallpaperOne from '../assets/wallpaperOne.jpg'
 
 
 
@@ -14,3 +14,9 @@ export const navLinks = [
     {"name":"contact","link":"#contact"},
 
 ]
+
+export {
+
+    wallpaperOne
+    
+}

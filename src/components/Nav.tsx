@@ -10,6 +10,10 @@ const Nav = () => {
         <ul className="navbar-links">
             {navLinks.map((item) => <NavItem item={item}/>)}
         </ul>
+        <ul className="navbar-auth">
+            <button>Sign In</button>
+            <button>Rent Services</button>
+        </ul>
     </nav>
   )
 }

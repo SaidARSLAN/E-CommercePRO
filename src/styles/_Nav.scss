@@ -4,6 +4,10 @@ $nav-bg : #776B5D;
 
 $nav-color : #F3EEEA;
 
+$nav-dark-color : #B0A695;
+
+$font-family : 'Barlow', sans-serif;
+
 nav {
 
     padding: 2rem;
@@ -15,7 +19,7 @@ nav {
 
     .navbar-logo {
 
-
+        flex-grow: 1;
         h2 {
 
             font-family: 'Barlow', sans-serif;
@@ -28,5 +32,64 @@ nav {
         }
    
     }
+    .navbar-links {
+
+        flex-grow: 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+
+        a {
+
+            font-size: 2rem;
+            text-decoration: none;
+            color: $nav-dark-color;
+            text-transform: capitalize;
+            font-family: $font-family;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+
+            &:hover {
+
+                color: $nav-color;
+
+            }
+
+        }
+
+    }
+
+    .navbar-auth {
+
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+
+        button {
+
+            border: none;
+            background-color: $nav-dark-color;
+            color: $nav-color;
+            padding: 1rem;
+            font-family: $font-family;
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            &:hover {
+
+                background-color: $nav-color;
+                color: $nav-dark-color;
+
+            }
+
+        }
+    }
+
 
 }

@@ -1,8 +1,15 @@
 import React from 'react'
+import CreateOwn from '../components/CreateOwn'
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <section className='main-hero'>
+      <div className='hero-image'>
+
+      </div>
+          <h1>Classical Houses, More than vacation</h1>
+          <CreateOwn />
+    </section>
   )
 }
 
