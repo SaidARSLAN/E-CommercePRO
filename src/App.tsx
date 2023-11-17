@@ -1,11 +1,16 @@
 import './App.css'
+import { Advantages, Footer, Hero, Testimontials, TrendProducts } from './sections'
 
 function App() {
 
   return (
-    <div className='App'>
-
-    </div>
+    <main className='App'>
+      <Hero />
+      <Advantages />
+      <TrendProducts />
+      <Testimontials />
+      <Footer />
+    </main>
   )
 }
 
