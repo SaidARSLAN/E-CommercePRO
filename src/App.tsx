@@ -1,25 +1,11 @@
-import './styles/App.css'
-import { Advantages, Footer, Hero, Testimontials, TrendProducts } from './sections'
-import Nav from './components/Nav'
+import './App.css'
 
 function App() {
 
   return (
-    <main>
-
-      <Nav />
-
-      <Hero />
-
-      <Advantages />
-
-      <TrendProducts />
-
-      <Testimontials />
-
-      <Footer />
-
-    </main>
+    <>
+      
+    </>
   )
 }
 
