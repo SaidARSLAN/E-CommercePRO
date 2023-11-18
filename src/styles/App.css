@@ -21,10 +21,10 @@ main {
 nav {
   padding: 2rem;
   width: 100%;
-  height: 100px;
+  height: 75px;
   display: flex;
   align-items: center;
-  background-color: #776B5D;
+  background-color: #F3EEEA;
 }
 nav .navbar-logo {
   flex-grow: 1;
@@ -34,7 +34,7 @@ nav .navbar-logo h2 {
   font-size: 3rem;
   letter-spacing: 0.05rem;
   font-style: italic;
-  color: #F3EEEA;
+  color: #776B5D;
   cursor: pointer;
 }
 nav .navbar-links {
@@ -55,7 +55,7 @@ nav .navbar-links a {
   transition: color 0.3s ease;
 }
 nav .navbar-links a:hover {
-  color: #F3EEEA;
+  color: #776B5D;
 }
 nav .navbar-auth {
   flex-grow: 1;
@@ -66,7 +66,7 @@ nav .navbar-auth {
 nav .navbar-auth button {
   border: none;
   background-color: #B0A695;
-  color: #F3EEEA;
+  color: #776B5D;
   padding: 1rem;
   font-family: "Barlow", sans-serif;
   font-size: 1.6rem;
@@ -77,30 +77,57 @@ nav .navbar-auth button {
   transition: color 0.3s ease;
 }
 nav .navbar-auth button:hover {
-  background-color: #F3EEEA;
+  background-color: #776B5D;
   color: #B0A695;
 }
 
 .main-hero {
   width: 100%;
-  height: calc(100% - 100px);
-  cursor: grab;
+  height: 520px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
-.main-hero .hero-image {
+.main-hero .image-section {
   width: 100%;
   height: 100%;
-  background: url("../assets/wallpaperOne.jpg");
-  filter: brightness(0.3);
+  background-image: url("../assets/wallpaperOne.jpg");
   background-position: center;
+  background-size: cover;
+  filter: brightness(0.6);
 }
 .main-hero h1 {
   position: absolute;
-  color: #EBE3D5;
+  color: #F3EEEA;
   font-family: "Barlow", sans-serif;
-  font-size: 3.2rem;
+  font-size: 5rem;
   letter-spacing: 1px;
+}
+.main-hero .create-own {
+  border-radius: 5px;
+  background-color: #F3EEEA;
+  width: 720px;
+  height: 150px;
+  position: absolute;
+  bottom: 75px;
+  border: 5px solid #776B5D;
+}
+.main-hero .create-own .title-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.main-hero .create-own .title-buttons .btn {
+  border: none;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-family: "Barlow", sans-serif;
+  cursor: pointer;
+}
+.main-hero .create-own .title-buttons .active {
+  border-bottom: 1px solid #B0A695;
 }/*# sourceMappingURL=App.css.map */
