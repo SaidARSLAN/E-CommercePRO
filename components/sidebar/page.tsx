@@ -20,7 +20,7 @@ const SideBar = () => {
     <div   className={toggle ? style.open : style.close}>
         <div className={style.header}>
                 <SiBigcommerce className={style.logo}/>
-                <IoMdClose onClick={handleClose} className={style.closeicon}/>
+                <IoMdClose onClick={handleClose} className={toggle ? style.closeicon : style.closed}/>
           </div>
         <div className={style.input}>
             <input type="text"/>
