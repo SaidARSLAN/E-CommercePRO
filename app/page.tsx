@@ -1,9 +1,11 @@
-import HomeContainer from '@/containers/home'
 import React from 'react'
-
+import styles from './styles.module.css'
+import HomeContainer from '@/containers/home'
 const HomePage = () => {
   return (
-    <HomeContainer />
+    <div className={styles.home}>
+      <HomeContainer />
+    </div>
   )
 }
 

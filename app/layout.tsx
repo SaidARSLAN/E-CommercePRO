@@ -1,8 +1,8 @@
-import Header from "@/components/header/page"
 import '../styles/reset.css'
 import '../styles/global.css'
-import Footer from "@/components/footer/page"
-import { Provider } from "@/context/MainContext"
+import Header from '@/components/header/page'
+import Footer from '@/components/footer/page'
+
 
 export default function RootLayout({
   children,
@@ -12,13 +12,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="container">
-        <Provider>
         <Header />
         <main>
           {children}
           </main>
-        <Footer />
-        </Provider>
+          <Footer />
         </body>
     </html>
   )

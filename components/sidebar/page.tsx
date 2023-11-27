@@ -5,7 +5,7 @@ import GlobalContext from '@/context/MainContext'
 import { CiSearch } from "react-icons/ci";
 import { SiBigcommerce } from "react-icons/si";
 import { IoMdClose } from "react-icons/io";
-import Link from 'next/link';
+import Link from 'next/link'; 
 
 
 
