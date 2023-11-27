@@ -20,9 +20,11 @@ const HeroPage =  () => {
 
   return (
     <div className={styles.main}>
-        <button onClick={handleBack}>BACK</button>
         <HeroItem item={data[step]}/>
+        <div className={styles.buttonsPlace}>
+        <button onClick={handleBack}>BACK</button>
         <button onClick={handleNext}>NEXT</button>
+        </div>
     </div>
   )
 }
