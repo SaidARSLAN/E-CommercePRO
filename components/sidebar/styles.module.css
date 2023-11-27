@@ -1,36 +1,47 @@
+.close {
+    display: none;
+}
+.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 5rem 3.7rem;
+    background-color:#EEEEEE;
+    justify-content: center;
+}
 .header {
     width: 100%;
-    height: 250px;
-    padding: 1rem 12rem 0rem 12rem;
-    display: grid;
-    grid-template-columns: 1fr 100%;    
-    border-bottom: 1px solid #a9cbce;
-    background-color: #EEEEEE;
-    position:fixed;
-}
-
-.logo {
-    color: #00ADB5;
-    letter-spacing: -1px;
-    cursor: default;
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+.logo {
     font-size: 4rem;
+    color: #00ADB5;
     cursor: pointer;
 }
-
-.navbar {
-
+.closeicon {
+    cursor: pointer;
+    font-size:2.4rem;
+    position: absolute;
+    right: 2rem;
+    top: 4rem;
+}
+.closeicon:hover {
+    color: #00ADB5;
+}
+.input {
+    width: 75%;
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    
+    justify-content: center;
 }
-.search {
-    width: 500px;
-    position: relative;
-}
-.search input {
+.input input {
     width: 100%;
     height: 40px;
     padding: 1rem 0.8rem;
@@ -40,15 +51,14 @@
     border: none;
     border:  2px solid white;
 }
-.search input:focus {
-
+.input input:focus {
     outline: none;
     border: 2px solid #00ADB5;
 }
-.search input:hover{
+.input input:hover {
     border: 2px solid #00ADB5;
 }
-.search button {
+.input button {
     position: absolute;
     height: 100%;
     right: 0px;
@@ -63,7 +73,9 @@
 .links {
     width: 200px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .links a {
     text-decoration: none;
@@ -90,32 +102,4 @@
     font-size: 1.2rem;
     letter-spacing: 0.8px;
     cursor: pointer;
-}
-
-.hamburger {
-    display: none;
-}
-
-@media screen and (max-width:500px) {
-        .header {
-            padding: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 120px;
-        }
-        .logo {
-            font-size: 4rem;
-        }
-        .navbar {
-            display: none;
-        }
-        .hamburger {
-            font-size: 2rem;
-            display: block;
-            cursor: pointer;
-        }
-        .hamburger:hover {
-            color: #00ADB5;
-        }
 }

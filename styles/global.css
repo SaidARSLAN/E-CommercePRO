@@ -2,10 +2,3 @@ html,body {
     background-color: #EEEEEE;
     font-size: 16px;
 }
-.container {
-
-    display: grid;
-
-    grid-template-rows: 0.5fr auto 1fr;
-
-}
