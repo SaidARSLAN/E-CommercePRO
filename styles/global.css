@@ -2,7 +2,7 @@ html,body {
     background-color: #EEEEEE;
     font-size: 16px;
 }
-body {
+.container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 200px auto 600px;

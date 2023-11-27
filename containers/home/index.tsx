@@ -5,7 +5,6 @@ import HeroPage from '@/components/hero/page'
 const HomeContainer = () => {
   return (
     <div className={styles.home}>
-        <SideBar />
         <HeroPage />
         <div className={styles.pageOne}>PAGE 1</div>
         <div className={styles.pageTwo}>PAGE 2</div>
