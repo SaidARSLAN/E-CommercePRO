@@ -27,7 +27,7 @@ const SideBar = () => {
             <button><CiSearch /></button>
         </div>
         <nav className={style.links}>
-                    {loginControl ? <Link href='/'>Admin</Link> : <Link href='/login'>Login</Link>}
+                    {loginControl ? <Link href='/'>Logout</Link> : <Link href='/login'>Login</Link>}
                     <Link href='/box'>Box</Link>
         </nav>
         <div>

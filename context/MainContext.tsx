@@ -13,7 +13,8 @@ type contextProps = {
     getToggleControl: () => void,
     toggle : boolean,
     completeLogin : (username:string,password:string) => boolean,
-    loginControl : boolean
+    loginControl : boolean,
+    completeLogout : () => void,
 }
 
 
@@ -21,7 +22,8 @@ const GlobalContext = createContext<contextProps>({
     getToggleControl: () => {},
     toggle:false,
     completeLogin : (data) => false,
-    loginControl : false
+    loginControl : false,
+    completeLogout : () => {}
 })
 
 type childrenProps = {
@@ -53,8 +55,14 @@ export const Provider: React.FC<childrenProps> = ({ children }) => {
         }
         return false
     }
+
+    const completeLogout= () => {
+        localStorage.clear()
+        setLoginControl(false)
+    }
+
     return (
-        <GlobalContext.Provider value={{ getToggleControl,toggle,completeLogin,loginControl }}>
+        <GlobalContext.Provider value={{ getToggleControl,toggle,completeLogin,loginControl,completeLogout }}>
             {children}
         </GlobalContext.Provider>
     )

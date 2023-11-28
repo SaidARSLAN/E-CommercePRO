@@ -9,7 +9,7 @@ import GlobalContext from '@/context/MainContext';
 
 const Header = () => {
 
-    const { loginControl,toggle, getToggleControl } = useContext(GlobalContext)
+    const { loginControl,toggle, getToggleControl,completeLogout } = useContext(GlobalContext)
 
     const [scrollToggle, setScrollToggle] = useState(false)
 
@@ -21,6 +21,11 @@ const Header = () => {
             setScrollToggle(false)
         }
     })
+
+    const handleLogOut = () => {
+        completeLogout()
+    }
+
     return (
         <header className={toggle ? styles.headerSide : scrollToggle ? styles.headerWhite : styles.header}>
             <Link href='/' className={styles.logo}>
@@ -32,7 +37,7 @@ const Header = () => {
                     <button><CiSearch /></button>
                 </div>
                 <nav className={styles.links}>
-                    {loginControl ? <Link href='/'>admin</Link> :  <Link href='/login'>Login</Link>}
+                    {loginControl ? <Link href='/' onClick={handleLogOut}>Logout</Link> :  <Link href='/login'>Login</Link>}
                     <Link href='/box'>Box</Link>
                 </nav>
                 <div>
