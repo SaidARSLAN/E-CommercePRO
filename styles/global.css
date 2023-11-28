@@ -5,7 +5,7 @@ html,body {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px auto 600px;
+    grid-template-rows: auto 600px;
 }
 
 footer {
@@ -13,6 +13,6 @@ footer {
 }
 @media screen and (max-width:500px) {
     body {
-        grid-template-rows: 120px auto 600px;
+        grid-template-rows: auto 600px;
     }
 }

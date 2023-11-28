@@ -3,6 +3,7 @@
     background-color: #fff;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 .item {
     background-color: rgb(28, 42, 42);
@@ -34,9 +35,13 @@
     height: 100%;
     cursor: pointer;
     width: 120px;
+    font-size: 3.2rem;
+    color: rgba(0, 0, 0, 0.195);
+    transition: all 0.2s ease;
 }
 .buttonsPlace button:hover {
-    background-color: #fff;
+    background: rgba(61, 61, 61, 0.136);
+    color: rgba(0, 0, 0, 0.553);
 }
 .name {
     flex-direction: column;

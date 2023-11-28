@@ -10,7 +10,7 @@ import GlobalContext from '@/context/MainContext';
 const Header = () => {
     
     const {getToggleControl} = useContext(GlobalContext)
-   
+    
 
 
     return (

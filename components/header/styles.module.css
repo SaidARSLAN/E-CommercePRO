@@ -1,11 +1,12 @@
 .header {
     width: 100%;
-    height: auto;
-    padding: 1rem 12rem 0rem 12rem;
+    height: 120px;
+    padding: 0rem 12rem 0rem 12rem;
     display: grid;
     grid-template-columns: 1fr 100%;    
-    border-bottom: 1px solid #a9cbce;
-    background-color: #EEEEEE;
+    background-color: #eeeeee17;
+    position: fixed;
+    z-index: 1;
 }
 
 .logo {
@@ -37,7 +38,9 @@
     letter-spacing: 1px;
     border-radius: 5px;
     border: none;
+    background-color: transparent;
     border:  2px solid white;
+    color: white;
 }
 .search input:focus {
 
@@ -66,14 +69,13 @@
 }
 .links a {
     text-decoration: none;
-    color: #222831;
-    background-color: #393E46;
+    color: white;
+    background-color: transparent;
     padding: 1rem 1rem;
     border-radius: 5px;
     font-size: 1.2rem;
     font-weight: 1000;
     letter-spacing: 1.4px;
-    background-color: #EEEEEE;
 }
 .links a:hover {
 
