@@ -8,12 +8,12 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import GlobalContext from '@/context/MainContext';
 
 const Header = () => {
-    
-    const {toggle,getToggleControl} = useContext(GlobalContext)
 
-    const [scrollToggle,setScrollToggle] = useState(false)
+    const { loginControl,toggle, getToggleControl } = useContext(GlobalContext)
 
-    window.addEventListener('scroll',event => {
+    const [scrollToggle, setScrollToggle] = useState(false)
+
+    window.addEventListener('scroll', event => {
         if (window.scrollY > 650) {
             setScrollToggle(true)
         }
@@ -23,16 +23,16 @@ const Header = () => {
     })
     return (
         <header className={toggle ? styles.headerSide : scrollToggle ? styles.headerWhite : styles.header}>
-            <div className={styles.logo}>
+            <Link href='/' className={styles.logo}>
                 <SiBigcommerce />
-            </div>
+            </Link>
             <div className={styles.navbar}>
                 <div className={styles.search}>
                     <input type="text" placeholder='search products...' />
                     <button><CiSearch /></button>
                 </div>
                 <nav className={styles.links}>
-                    <Link href='/login'>Login</Link>
+                    {loginControl ? <Link href='/'>admin</Link> :  <Link href='/login'>Login</Link>}
                     <Link href='/box'>Box</Link>
                 </nav>
                 <div>

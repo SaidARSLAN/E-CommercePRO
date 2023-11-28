@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 
 const SideBar = () => {
-    const {toggle,getToggleControl} = useContext(GlobalContext)
+    const {loginControl,toggle,getToggleControl} = useContext(GlobalContext)
     const handleClose = () => {
 
         getToggleControl()
@@ -27,7 +27,7 @@ const SideBar = () => {
             <button><CiSearch /></button>
         </div>
         <nav className={style.links}>
-                    <Link href='/login'>Login</Link>
+                    {loginControl ? <Link href='/'>Admin</Link> : <Link href='/login'>Login</Link>}
                     <Link href='/box'>Box</Link>
         </nav>
         <div>
