@@ -2,7 +2,13 @@ import SideBar from '@/components/sidebar/page'
 import React from 'react'
 import styles from './styles.module.css'
 import HeroPage from '@/components/hero/page'
-const HomeContainer = () => {
+
+
+
+const HomeContainer =  () => {
+
+  
+
   return (
     <div className={styles.home}>
         <HeroPage />

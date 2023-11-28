@@ -12,22 +12,27 @@ const LoginPage = () => {
   const {completeLogin} = useContext(GlobalContext)
   const router = useRouter()
   const [username, setUsername] = useState("")
-
   const [password, setPassword] = useState("")
+  const [loadingControl, setLoadingControl] = useState(false)
+
 
   const handleClickLogin = (event:any) => {
     event.preventDefault()
+    setLoadingControl(true)
     const result = completeLogin(username,password)
     if (result) {
-      router.push('/')
+      setTimeout(() => {
+        console.log(loadingControl)
+        router.push('/')
+      },3000)
     }
   }
 
-
   return (
     <div className={styles.login}>
-      <form className={styles.form}>
-
+      {
+        loadingControl ? <form className={styles.form}><div className={styles.loader}></div></form> :
+        <form className={styles.form}>
         <input
           type="text"
           value={username}
@@ -39,6 +44,7 @@ const LoginPage = () => {
           onChange={e => setPassword(e.target.value)} />
         <button onClick={handleClickLogin}>Login</button>
       </form>
+        }
     </div>
   )
 }
