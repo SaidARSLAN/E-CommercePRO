@@ -23,6 +23,7 @@
     background-color: #EEEEEE;
     justify-content: center;
     transition: width 0.2s ease;
+    z-index: 1;
 }
 
 

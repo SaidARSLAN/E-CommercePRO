@@ -8,7 +8,9 @@
     position: fixed;
     z-index: 1;
 }
-
+.headerSide {
+    display: none;
+}
 .logo {
     color: #00ADB5;
     letter-spacing: -1px;
@@ -40,6 +42,9 @@
     border: none;
     background-color: transparent;
     border:  2px solid white;
+    color: white;
+}
+.search input::placeholder {
     color: white;
 }
 .search input:focus {
@@ -114,6 +119,7 @@
             font-size: 2rem;
             display: block;
             cursor: pointer;
+            color: #fff;
         }
         .hamburger:hover {
             color: #00ADB5;

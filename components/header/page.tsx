@@ -9,12 +9,12 @@ import GlobalContext from '@/context/MainContext';
 
 const Header = () => {
     
-    const {getToggleControl} = useContext(GlobalContext)
+    const {toggle,getToggleControl} = useContext(GlobalContext)
     
 
 
     return (
-        <header className={styles.header}>
+        <header className={toggle ? styles.headerSide : styles.header}>
             <div className={styles.logo}>
                 <SiBigcommerce />
             </div>
