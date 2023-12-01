@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
-import Header from './ui/Header'
-
+import Header from './ui/header/Header'
+import './styles/reset.css'
+import SideBar from './ui/sidebar/SideBar'
+import { Provider } from './context/MainContext'
 
 export const metadata: Metadata = {
   title: 'E-commerce',
@@ -15,8 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Provider>
+      <SideBar />
       <Header />
         {children}
+        </Provider>
       </body>
     </html>
   )

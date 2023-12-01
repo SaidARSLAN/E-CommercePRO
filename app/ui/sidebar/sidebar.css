@@ -1,0 +1,19 @@
+.sidebar {
+    height: 100%;
+    background-color: #4444449f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: width 0.25s ease;
+    position: fixed;
+    padding: 0;
+    overflow-x: hidden;
+}
+.close {
+    width: 0;
+}
+.open {
+    width: 100%;
+}

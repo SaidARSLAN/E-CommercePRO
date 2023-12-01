@@ -1,0 +1,45 @@
+nav {
+    padding: 2rem 12rem;
+}
+.nav-logo {
+    width: 25%;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+    font-weight: 1000;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-logo h1 {
+    font-size: 4rem;
+}
+.nav-hamburger {
+ display: none;       
+}
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    nav {
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-logo h1 {
+        font-size: 2.4rem;
+    }
+    .nav-hamburger {
+        display: block;
+        font-size: 2.4rem;
+        cursor: pointer;
+        color: #666;
+        transition: color 0.25s ease;
+    }
+    .nav-hamburger:hover {
+        color: #000;
+    }
+}

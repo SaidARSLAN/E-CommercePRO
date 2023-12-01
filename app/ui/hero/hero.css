@@ -1,0 +1,5 @@
+.hero-section {
+    /* 82.400 header height */
+    height: calc(100vh - 142.400px);
+    padding: 2rem 12rem;
+}
