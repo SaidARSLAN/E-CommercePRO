@@ -1,5 +1,13 @@
 .hero-section {
     /* 82.400 header height */
-    height: calc(100vh - 142.400px);
-    padding: 2rem 12rem;
+    height: calc(100vh - 174.400px);
+    padding: 0rem 20rem ; 
+    width: 100%;
+}
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50px;
 }
