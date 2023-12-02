@@ -2,6 +2,7 @@
 import React from 'react'
 import './trends.css'
 import Products from './Products'
+import Link from 'next/link'
 
 
 const Trends = async  () => {
@@ -9,10 +10,10 @@ const Trends = async  () => {
   const products = await req.json()
 
   return (
-    <div>
-      {products.map((product:any) => {
+    <div className='trends'>
+      {products.map((product:any,idx:number) => {
         
-        return <Products product={product}/>
+        return <Link className='product-link' href={`/product-detail/${idx}`}><Products product={product}/>{idx}</Link>
       })}
     </div>
   )
