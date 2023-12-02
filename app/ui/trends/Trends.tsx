@@ -1,11 +1,22 @@
+
 import React from 'react'
 import './trends.css'
-const Trends = () => {
+import Products from './Products'
+
+
+const Trends = async  () => {
+ const req =  await fetch('https://fakestoreapi.com/products')
+  const products = await req.json()
+
   return (
-    <section className='trends'>
-            TRENDS
-    </section>
+    <div>
+      {products.map((product:any) => {
+        
+        return <Products product={product}/>
+      })}
+    </div>
   )
+  
 }
 
 export default Trends
