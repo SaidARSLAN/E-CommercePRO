@@ -10,14 +10,23 @@
     background-color: rgba(0, 0, 0, 0.141);
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     border-radius: 5px;
-    filter: brightness(0.8);
+    filter: brightness(0.6);
     transition: filter 0.25s ease;
 }
 .hero-section .main-image:hover {
     filter: brightness(1);
+}
+.title {
+    position: absolute;
+    bottom: 12rem;
+    left: 24rem;
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;    
 }
 @media screen and (max-width:1400px) {
     .hero-section {
@@ -29,5 +38,10 @@
     }
     .hero-section .main-image {
         width: 95%;
+    }
+    .title {
+        left: 2rem;
+        bottom: 4rem;
+        font-size: 2rem;
     }
 }

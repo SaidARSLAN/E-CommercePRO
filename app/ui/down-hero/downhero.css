@@ -14,8 +14,12 @@
     object-position: center;
     object-fit: cover;
 }
+.downhero .active {
+    border: 5px solid #fff;
+}
 .downhero .small-image:hover {
     filter: brightness(0.8);
+    border: 5px solid #fff;
 }
 @media screen and (max-width:1400px) {
     .downhero .small-image {
