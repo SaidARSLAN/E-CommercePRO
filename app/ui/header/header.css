@@ -1,9 +1,9 @@
 nav {
-    padding: 6rem 20rem 0rem 20rem;
+    padding: 5rem 20rem 0rem 20rem;
 }
 nav a {
     text-decoration: none;
-    color: black;
+    color: black;   
 }
 .nav-logo {
     width: 25%;

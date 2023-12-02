@@ -1,0 +1,25 @@
+.downhero{
+    position: absolute;
+    bottom: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+.downhero .small-image {
+    border: 5px solid black;
+    cursor: pointer;
+    filter: brightness(0.4);
+    transition: filter 0.25s ease;
+    object-position: center;
+    object-fit: cover;
+}
+.downhero .small-image:hover {
+    filter: brightness(0.8);
+}
+@media screen and (max-width:500px) {
+    .downhero .small-image {
+        width: 50px;
+        height: 60px;
+    }
+}
