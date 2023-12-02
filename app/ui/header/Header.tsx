@@ -19,6 +19,10 @@ const Header = () => {
       <div className='nav-hamburger' onClick={openSideBar}>
       <GiHamburgerMenu />
       </div>
+      <ul className='nav-list'>
+        <li><Link href='login'>Login</Link></li>
+        <li><Link href='login'>Box</Link></li>
+      </ul>
     </nav>
   )
 }

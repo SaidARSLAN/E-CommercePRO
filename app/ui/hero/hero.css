@@ -4,6 +4,7 @@
     padding: 0rem 20rem ; 
     width: 100%;
     position: relative;
+    margin-top: 1rem;
 }
 .hero-section .main-image {
     background-color: rgba(0, 0, 0, 0.141);
@@ -18,7 +19,7 @@
 .hero-section .main-image:hover {
     filter: brightness(1);
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:1400px) {
     .hero-section {
         height: calc(100vh - 400px);
         display: flex;

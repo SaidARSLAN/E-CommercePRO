@@ -17,7 +17,7 @@
 .downhero .small-image:hover {
     filter: brightness(0.8);
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:1400px) {
     .downhero .small-image {
         width: 50px;
         height: 60px;
