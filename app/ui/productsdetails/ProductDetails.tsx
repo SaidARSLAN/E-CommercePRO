@@ -12,7 +12,9 @@ const ProductDetails = ({product}:any) => {
   return (
     <div className='product'>
         <div className='product-title'>
-        <Image src={product.image} width={300} height={300} alt='image' className='image-center'/>
+          <div className='image-center'>
+        <Image src={product.image} width={300} height={300} alt='image'/>
+          </div>
         <h1 className='main-title'>{product.title}</h1>
         </div>
         <div className='product-description'>

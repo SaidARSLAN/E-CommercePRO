@@ -47,5 +47,8 @@
     }
     .product-link {
         width: 55%;
+        height: 35%;
+        align-items: flex-start;
+        justify-content: flex-end;
     }
 }
