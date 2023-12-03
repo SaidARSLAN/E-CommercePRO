@@ -7,7 +7,6 @@ const cutProductTitle = (title:string) => {
 }
 
 const Products = ({product}:any) => {
-    console.log(product)
   return (
     <div className='product'>
         <Image src={product && product.image} alt='image' width={200} height={200}/>
