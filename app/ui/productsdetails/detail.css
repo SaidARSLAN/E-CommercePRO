@@ -14,7 +14,7 @@
 .product .product-description h4 {
     font-size: 1.5rem;
     background-color: gray;
-    width: 45%;
+    width: 50%;
     color: white;
     margin: 1.2rem 0;
     display: flex;
@@ -23,6 +23,7 @@
     padding: 0.54rem 0;
     letter-spacing: 1.2px;
     font-style: italic;
+    white-space: nowrap;
 }
 .product .product-description .button-section {
     margin-top: 1rem;
@@ -79,4 +80,43 @@
     letter-spacing: 0.85px;
     text-align: left;
     cursor: pointer;
+}
+.main-title {
+    width: 75%;
+}
+@media screen and (max-width:500px) {
+    .product {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 12rem;
+    }
+    .product .product-description {
+        width: 100%;
+        text-align: center;
+    }
+    .main-title {
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .read-more {
+        text-align: center;
+    }
+    .image-center {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .product .product-description h4 {
+        width: 100%;
+        margin: 1rem auto;
+    }
+    .product .product-description .button-section {
+        justify-content: center;
+        margin-bottom: 2.5rem;
+    }
+
 }

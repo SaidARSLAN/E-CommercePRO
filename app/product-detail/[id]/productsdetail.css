@@ -8,3 +8,8 @@
 .product-title {
     height: 400px;
 }
+@media screen and (max-width:500px) {
+    .products-detail {
+        padding: 0;
+    }
+}

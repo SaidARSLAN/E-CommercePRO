@@ -12,12 +12,12 @@ const ProductDetails = ({product}:any) => {
   return (
     <div className='product'>
         <div className='product-title'>
-        <Image src={product.image} width={300} height={300} alt='image'/>
-        <h1>{product.title}</h1>
+        <Image src={product.image} width={300} height={300} alt='image' className='image-center'/>
+        <h1 className='main-title'>{product.title}</h1>
         </div>
         <div className='product-description'>
             <p className={readControl ? 'read':'descript'}>{product.description}</p>
-            <button className='read-more' onClick={handleReadMore}>read more</button>
+            <button className='read-more' onClick={handleReadMore}>read {readControl ? 'less' : 'more'}</button>
             <h4>{product.category}</h4>
             <div className='button-section'>
                 <button className='add'>Add</button>
