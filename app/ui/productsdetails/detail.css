@@ -62,3 +62,7 @@
 .product .product-description .add:hover {
     background-color: yellow;
 }
+.descript{
+    height: 110px;
+    overflow: hidden;
+}

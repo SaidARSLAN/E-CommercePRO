@@ -1,4 +1,3 @@
-import Products from '@/app/ui/trends/Products'
 import React from 'react'
 import './productsdetail.css'
 import ProductDetails from '@/app/ui/productsdetails/ProductDetails'
