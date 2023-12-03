@@ -66,3 +66,17 @@
     height: 110px;
     overflow: hidden;
 }
+.read {
+    height: 250px;
+    overflow-y: scroll;
+}
+.read-more{
+    border: none;
+    margin-top: 0.85rem;
+    background-color: transparent;
+    color: rgb(114, 114, 196);
+    font-weight: 1000;
+    letter-spacing: 0.85px;
+    text-align: left;
+    cursor: pointer;
+}
