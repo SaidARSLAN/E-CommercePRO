@@ -45,7 +45,7 @@ const Trends = () => {
           {
             products.slice(currPage, currPage + 6).map((product: any, idx: number) => {
 
-              return <Link key={idx} className='product-link' href={`/product-detail/${idx + 1}`}><Products product={product} /></Link>
+              return <Link key={idx} className='product-link' href={`/product-detail/${currPage+idx + 1}`}><Products product={product} /></Link>
 
             })}
 
