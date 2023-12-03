@@ -13,7 +13,7 @@ const Trends = async  () => {
     <div className='trends'>
       {products.map((product:any,idx:number) => {
         
-        return <Link className='product-link' href={`/product-detail/${idx}`}><Products product={product}/>{idx}</Link>
+        return <Link className='product-link' href={`/product-detail/${idx}`}><Products product={product}/></Link>
       })}
     </div>
   )

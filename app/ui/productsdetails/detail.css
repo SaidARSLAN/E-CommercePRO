@@ -1,0 +1,64 @@
+.product {
+    display: flex;
+    justify-content: space-between;
+}
+.product .product-description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.product .product-description p {
+    font-size: 1.5rem;
+}
+.product .product-description h4 {
+    font-size: 1.5rem;
+    background-color: gray;
+    width: 45%;
+    color: white;
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.54rem 0;
+    letter-spacing: 1.2px;
+    font-style: italic;
+}
+.product .product-description .button-section {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 1rem;
+}
+.product .product-description .buy {
+    background-color: rgba(255, 0, 0, 0.651);
+    color: white;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 1.2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.25s ease background-color;
+    font-weight: 1000;
+}
+.product .product-description .buy:hover {
+    background-color: red;
+}
+.product .product-description .add {
+    background-color: rgba(225, 255, 0, 0.651);
+    color: black;
+    font-weight: 1000;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 1.2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.25s ease background-color;
+}
+.product .product-description .add:hover {
+    background-color: yellow;
+}
